@@ -1,8 +1,8 @@
 {
-  "name": "my-vue-app",
+  "name": "my-world-app",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Brandon Parise <bparise@gmail.com>",
+  "author": "Glenn Kersting <gjkersting@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
