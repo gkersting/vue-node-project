@@ -19,6 +19,7 @@
               <td>{{ todo.body|truncate(50) }}</td>
               <td>{{ todo.updatedAt }}</td>
               <td class="text-right">
+                <a href="#" @click.prevent="completeTodo(todo.id)">Complete</a> -
                 <a href="#" @click.prevent="populateTodoToEdit(todo)">Edit</a> -
                 <a href="#" @click.prevent="deleteTodo(todo.id)">Delete</a>
               </td>
@@ -93,6 +94,10 @@ export default {
         await api.deleteTodo(id)
         await this.refreshList()
       }
+    },
+    async completeTodo (id) {
+      await api.deleteTodo(id)
+      await this.refreshList()
     }
   }
 }
